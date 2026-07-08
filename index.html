@@ -4,68 +4,34 @@
     <meta charset="UTF-8">
     <title>4択クイズ</title>
 
-    <style>
-        body {
-            font-family: sans-serif;
-            background-color: #eef2f7;
-            text-align: center;
-            padding-top: 50px;
-        }
+<link rel="stylesheet" href="body11.css">
+    
 
-        #box {
-            width: 700px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px gray;
-        }
-
-        #timer {
-            font-size: 40px;
-            color: black;
-            margin-bottom: 20px;
-        }
-
-        #question {
-            font-size: 28px;
-            margin-bottom: 30px;
-        }
-
-        button {
-            width: 300px;
-            margin: 10px;
-            padding: 15px;
-            font-size: 20px;
-            cursor: pointer;
-            border: none;
-            border-radius: 10px;
-            background-color: #4a90e2;
-            color: white;
-        }
-
-        button:hover {
-            background-color: #357bd8;
-        }
-
-        #startButton {
-            background-color: green;
-        }
-    </style>
 </head>
 
 <body>
 
-<audio id="correctSound" src="Quiz-Ding_Dong03/correct.mp3"></audio>
-<audio id="wrongSound" src="Quiz-Buzzer05/wrong.mp3"></audio>
+<audio id="correctSound" src="correct.mp3"></audio>
+
+<audio id="wrongSound" src="wrong.mp3"></audio>
+
 
 <div id="box">
 
     <h1>4択クイズ</h1>
 
-    <div id="timer">10</div>
+   
 
-    <div id="question">スタートを押してください</div>
+    <div id="question">
+        スタートを押してください
+    </div>
+    <div id="timerArea">
+    <div id="timer">10秒</div>
+
+    <div id="timerBarBox">
+        <div id="timerBar"></div>
+    </div>
+</div>
     <div id="status"></div>
     <div id="choices"></div>
     <div id="result"></div>
@@ -76,7 +42,7 @@
 
 </div>
 
-<script src="script.js"></script>
+<script src="script2.js"></script>
 
 </body>
 </html>
