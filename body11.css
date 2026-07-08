@@ -1,0 +1,147 @@
+body{
+    background: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+
+#box{
+    width: 1100px;
+    margin: 20px auto;
+
+    background: transparent;
+
+    padding: 20px;
+    box-shadow: none;
+}
+
+h1{
+    color: #333;
+}
+
+#timer{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff4d4d;
+    margin-bottom: 30px;
+    position: relative;
+    left: 0px;
+}
+
+#status{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#question{
+    width: 800px;
+    height: 220px;
+
+    margin: 50px auto;
+
+    border: 8px solid #1f4d7a;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    background: transparent;
+}
+
+
+#choices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+
+.choiceButton{
+    width: 340px;
+    height: 100px;
+
+    border: 3px solid black;
+    border-radius: 20px;
+
+    background: white;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#startButton{
+    padding: 15px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    background: #28c76f;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#startButton:hover{
+    background: #20a85a;
+    transform: scale(1.05);
+}
+
+#timerArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+#timerBarBox{
+    width: 500px;
+    height: 20px;
+    margin: 0;
+
+    border: 2px solid #333;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+#timerBar{
+    width: 100%;
+    height: 100%;
+
+    background: limegreen;
+
+    transition: width 1s linear;
+}
+
+
+#result{
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+#result h1{
+    margin: 10px 0;
+}
+
+#result h2{
+    color: #444;
+}
+
+#result p{
+    font-size: 20px;
+    color: #666;
+}
